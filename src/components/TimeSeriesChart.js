@@ -12,7 +12,7 @@ function TimeSeriesChart({ data }) {
     const parseDate = d3.timeParse("%Y-%m-%d");
     const fetchData = async () => {
       console.log("hi");
-      const result = await axios.get("http://localhost:4000/timeSeriesData");
+      const result = await axios.get("http://3.23.130.250:4000/timeSeriesData");
       console.log(result.data);
 
       const formattedData = Object.entries(result.data).map((d) => ({

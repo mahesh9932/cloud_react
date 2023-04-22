@@ -18,7 +18,7 @@ const BarChart = () => {
   console.log("hi2");
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios.get("http://localhost:4000/barChartData");
+      const result = await axios.get("http://3.23.130.250:4000/barChartData");
       console.log("result", result.data);
       setData(result.data);
     };

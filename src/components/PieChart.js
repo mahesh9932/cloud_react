@@ -12,7 +12,7 @@ const PieChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       console.log("hi");
-      const result = await axios.get("http://localhost:4000/data");
+      const result = await axios.get("http://3.23.130.250:4000/data");
       console.log(result.data);
       setData(result.data);
     };

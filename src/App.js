@@ -34,7 +34,10 @@ function App() {
     try {
       let response;
       if (isLogin) {
-        response = await axios.post("http://localhost:4000/api/login", newUser);
+        response = await axios.post(
+          "http://3.23.130.250:4000/api/login",
+          newUser
+        );
         if (!response.data.success) {
           setError("login failed");
         } else {
@@ -42,7 +45,7 @@ function App() {
         }
       } else {
         response = await axios.post(
-          "http://localhost:4000/api/signup",
+          "http://3.23.130.250:4000/api/signup",
           newUser
         );
         setIsLoggedin(true);
