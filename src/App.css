@@ -28,6 +28,51 @@
   color: #61dafb;
 }
 
+.table-container {
+  height: 300px; /* set a specific height */
+  overflow: auto; /* add a scroll bar when content exceeds height */
+  overflow-x: auto;
+  margin-top: 20px;
+}
+th,
+td {
+  width: 150px;
+}
+
+.login-form {
+  width: 300px;
+  margin: auto;
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.form-ctrl {
+  margin-bottom: 20px;
+}
+.pie-container {
+  width: 50%;
+  height: 100px;
+  margin-top: 100px;
+  margin: auto;
+}
+
+* {
+  text-align: center;
+}
+
+table {
+  width: 100%; /* make table fill container width */
+  table-layout: fixed; /* prevent table from expanding to fit content */
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
