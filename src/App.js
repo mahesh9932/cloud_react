@@ -64,7 +64,7 @@ function App() {
     <>
       {!isLoggedin ? (
         <>
-          <button onClick={handler}>
+          <button onClick={handler} className="signup-btn">
             change to {!isLogin ? "Login" : "Signup"}
           </button>
           <form onSubmit={handleSubmit} class="login-form">
